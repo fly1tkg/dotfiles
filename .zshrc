@@ -106,3 +106,5 @@ esac
 ### Aliases ###
 alias r=rails
 alias v=vim
+
+source .zshrc_path
