@@ -16,6 +16,7 @@ Bundle 'derekwyatt/vim-scala.git'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'claco/jasmine.vim'
+Bundle 'slim-template/vim-slim'
 
 Bundle 'L9'
 Bundle 'FuzzyFinder'
@@ -143,6 +144,7 @@ if has("autocmd")
   autocmd FileType python     setlocal sw=4 sts=4 ts=4 et
   autocmd FileType ruby       setlocal sw=2 sts=2 ts=2 et
   autocmd FileType haml       setlocal sw=2 sts=2 ts=2 et
+  autocmd FileType slim       setlocal sw=2 sts=2 ts=2 et
   autocmd FileType sh         setlocal sw=4 sts=4 ts=4 et
   autocmd FileType sql        setlocal sw=4 sts=4 ts=4 et
   autocmd FileType vb         setlocal sw=4 sts=4 ts=4 et
