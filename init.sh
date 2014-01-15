@@ -8,7 +8,6 @@ git clone https://github.com/fly1tkg/dotfiles.git ~/dotfiles
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/.gvimrc ~/.gvimrc
 ln -s ~/dotfiles/.zshrc ~/.zshrc
-touch ~/dotfiles/.zshrc_path
 ln -s ~/dotfiles/.zshrc_path ~/.zshrc_path
 vi -c BundleInstall -c qa
 echo "done!"
