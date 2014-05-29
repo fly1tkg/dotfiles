@@ -1,4 +1,3 @@
-rm -rf ~/dotfiles
 rm -rf ~/.vim/bundle/vundle
 rm -f ~/.vimrc
 rm -f ~/.gvimrc
