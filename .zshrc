@@ -1,4 +1,3 @@
-# Create dby newuser for 5.0.2
 export LANG=ja_JP.UTF-8  # 文字コードをUTF-8に設定
 export KCODE=u           # KCODEにUTF-8を設定
 export AUTOFEATURE=true  # autotestでfeatureを動かす
@@ -103,8 +102,30 @@ esac
 # ------------------------------
 # Other Settings
 # ------------------------------
+
+### Macports ###
+case "${OSTYPE}" in
+  darwin*)
+    export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+    export MANPATH=/opt/local/share/man:/opt/local/man:$MANPATH
+  ;;
+esac
+
 ### Aliases ###
 alias r=rails
 alias v=vim
 
-source .zshrc_path
+### rbenv ###
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+### Android ###
+export PATH="/Applications/sdk/platform-tools:$PATH"
+export PATH="/Applications/sdk/tools:$PATH"
+export PATH="/Applications/android-ndk-r9d:$PATH"
+export ANDROID_HOME="/Applications/sdk"
+
+source ~/.zshrc_local
